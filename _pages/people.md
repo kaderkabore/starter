@@ -67,7 +67,7 @@ permalink: /people/
       <div class="archive__item">
         
           <div class="archive__item-teaser">
-            <img src="starter/assets/images/bio-photo.jpg" alt="Prof. Luca Gambardella">
+            <img src="/starter/assets/images/bio-photo.jpg" alt="Prof. Luca Gambardella">
             
           </div>
         
@@ -93,7 +93,7 @@ permalink: /people/
       <div class="archive__item">
         
           <div class="archive__item-teaser">
-            <img src="starter/assets/images/bio-photo.jpg" alt="Prof. Luca Gambardella">
+            <img src="/starter/assets/images/bio-photo.jpg" alt="Prof. Luca Gambardella">
             
           </div>
         
@@ -119,7 +119,7 @@ permalink: /people/
       <div class="archive__item">
         
           <div class="archive__item-teaser">
-            <img src="starter/assets/images/bio-photo.jpg" alt="Prof. Luca Gambardella">
+            <img src="/starter/assets/images/bio-photo.jpg" alt="Prof. Luca Gambardella">
             
           </div>
         

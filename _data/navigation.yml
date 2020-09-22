@@ -1,0 +1,9 @@
+main:
+  - title: "Research"
+    url: /
+  - title: "People"
+    url: /People/
+  - title: "Publications"
+    url: /Publications/
+  - title: "News"
+    url: /News/

@@ -1,0 +1,195 @@
+---
+layout: default
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="wide" itemscope itemtype="https://schema.org/CreativeWork">
+ 
+    {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+    {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
+    {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+
+    <div class="page__inner-wrap">
+     
+  {% unless page.header.overlay_color or page.header.overlay_image %}
+      <!--   <header>
+          {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% include page__meta.html %}
+        </header>
+      {% endunless %}
+ -->
+      <section class="page__content" itemprop="text">
+            <header>
+          {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">About</h1>{% endif %}
+          {% include page__meta.html %}
+        </header>
+   <p>    
+2013-2014 güz yarıyılında lisansüstü öğrenci kabulüne başlayan AGÜ-Fen Bilimleri Enstitüsü, şu anda 7 farklı anabilim dalında 11 farklı lisanüstü programına kayıtlı 93 yüksek lisans ve 103 doktora öğrencisi olmak üzere toplam 196 (Mart 2020 itibariyle) öğrenciye sahiptir. Enstitümüzde lisansüstü eğitim-öğretim programları İngilizce olarak yürülmekte olup, uluslararası bilimsel camiada fark yaratacak nitelikli lisansüstü çalışmaların yapılması ilke edinilmiştir. Uluslararası tanınırlıklara sahip üstün nitelikli 12 Profesör, 9 Doçent, ve 41 Dr. Öğr.Üyesinden  oluşan güçlü akademik kadrosu ile AGÜ-Fen Bilimleri Enstitüsü, bilimin ışığında, nitelikli çalışmaların yapıldığı bir araştıma kurumu olma, AGÜ’yü ve ülkemizi uluslararası düzeyde tanınır hale getirme hedefindedir. Bu hedefe yönelik önemli çalışmalara imza atan öğretim üyelerimiz bir çok ulusal ve uluslararası bilim ödüllerinin de sahibidir. Enstitümüzde yapılan Yüksek Lisans ve Doktora çalışmalarının sonuçlarının topluma sosyal, ekonomik, bilimsel katkılar yapacak değelere dönüşmesine, küresel sorunlara çözüm sunmasına ve yüksek indeksli uluslarararası akademik dergilerde yayınlanmasına oldukça önem vermekteyiz. Lisansüstü öğrencilerimizin merkezinde yer aldığı bu yüksek lisans ve doktora çalışmaları Tübitak, Kalkınma Bakanlığı, Avrupa Birliği, AGÜ-Bilimsel Araştırma Programı gibi bir çok resmi kurum ve endüstriyel firmalar tarafından finanse edilmektedir. Enstitü bünyesinde açılan ve öğrenci kabul eden lisansüstü programlarımız aşağıdaki gibidir: </p>
+
+        <header>
+          {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline"> Research</h1>{% endif %}
+          {% include page__meta.html %}
+        </header>
+<p>
+2013-2014 güz yarıyılında lisansüstü öğrenci kabulüne başlayan AGÜ-Fen Bilimleri: </p>
+
+
+
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item--left">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/sample.jpeg" alt="">
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Pointing-based human-robot interactionee</h2>
+          
+
+          
+         <div class="archive__item-excerpt">
+              <p>PhD student kader is developing techniques based on pointing gestures sensed by wearable devices to <a href="http://fbe.agu.edu.tr/">identify, localize and control robots</a>; a possible application is to <a href="http://fbe.agu.edu.tr/">precisely land quadrotors</a> without any previuos training.</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item--left">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/sample.jpeg" alt="">
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Pointing-based human-robot interactionee</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>PhD student kader is developing techniques based on pointing gestures sensed by wearable devices to <a href="http://fbe.agu.edu.tr/">identify, localize and control robots</a>; a possible application is to <a href="http://fbe.agu.edu.tr/">precisely land quadrotors</a> without any previuos training.</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+
+
+
+<p>Our paper “<em>Accurate position tracking with a single UWB anchor (ICRA2020)
+ </em>” was accepted at ICRA2020.  <a href="http://people.idsia.ch/~gromov/motion-relloc/" class="btn btn--info btn-sm">Details</a></p>
+
+
+
+
+<div class="responsive-video-container">
+    <div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe src="https://www.youtube.com/embed/UIZFHskukYo" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" id="fitvid0"></iframe></div>
+  </div>
+
+  <h2 id="jun-27-2018">Jun 27 2018<a class="header-link" href="#jun-27-2018" title="Permalink"><span class="sr-only">Permalink</span><i class="fa fa-link"></i></a></h2>
+
+
+
+        {% if page.toc %}
+          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
+              {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %}
+            </nav>
+          </aside>
+        {% endif %}
+        {{ content }}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+      </section>
+
+
+
+
+
+
+
+
+      <footer class="page__meta">
+        {% if site.data.ui-text[site.locale].meta_label %}
+          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+        {% endif %}
+        {% include page__taxonomy.html %}
+        {% include page__date.html %}
+      </footer>
+
+      {% if page.share %}{% include social-share.html %}{% endif %}
+
+      {% include post_pagination.html %}
+    </div>
+
+    {% if jekyll.environment == 'production' and site.comments.provider and page.comments %}
+      {% include comments.html %}
+    {% endif %}
+  </article>
+
+  {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
+  {% if page.id and page.related and site.related_posts.size > 0 %}
+    <div class="page__related">
+      <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
+      <div class="grid__wrapper">
+        {% for post in site.related_posts limit:4 %}
+          {% include archive-single.html type="grid" %}
+        {% endfor %}
+      </div>
+    </div>
+  {% comment %}<!-- otherwise show recent posts if no related when `related: true` -->{% endcomment %}
+  {% elsif page.id and page.related %}
+    <div class="page__related">
+      <h4 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "You May Also Enjoy" }}</h4>
+      <div class="grid__wrapper">
+        {% for post in site.posts limit:4 %}
+          {% if post.id == page.id %}
+            {% continue %}
+          {% endif %}
+          {% include archive-single.html type="grid" %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</div>
